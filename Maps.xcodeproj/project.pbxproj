@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		480294D5196CA67B00F8DE33 /* iOS-4-Wallpaper-iPhone-4 copia.png in Resources */ = {isa = PBXBuildFile; fileRef = 480294D4196CA67B00F8DE33 /* iOS-4-Wallpaper-iPhone-4 copia.png */; };
+		488205DF194DCAD9009E97D7 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488205DE194DCAD9009E97D7 /* iAd.framework */; };
 		4898C71B1900343600A7C69D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4898C71A1900343600A7C69D /* Foundation.framework */; };
 		4898C71D1900343600A7C69D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4898C71C1900343600A7C69D /* CoreGraphics.framework */; };
 		4898C71F1900343600A7C69D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4898C71E1900343600A7C69D /* UIKit.framework */; };
@@ -21,6 +23,7 @@
 		4898C73C1900343600A7C69D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4898C71E1900343600A7C69D /* UIKit.framework */; };
 		4898C7441900343600A7C69D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4898C7421900343600A7C69D /* InfoPlist.strings */; };
 		4898C7461900343600A7C69D /* MapsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4898C7451900343600A7C69D /* MapsTests.m */; };
+		4898C7501900344700A7C69D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4898C74F1900344700A7C69D /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		480294D4196CA67B00F8DE33 /* iOS-4-Wallpaper-iPhone-4 copia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iOS-4-Wallpaper-iPhone-4 copia.png"; path = "../../../Documents/png/iOS-4-Wallpaper-iPhone-4 copia.png"; sourceTree = "<group>"; };
+		488205DE194DCAD9009E97D7 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		4898C7171900343600A7C69D /* Maps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4898C71A1900343600A7C69D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4898C71C1900343600A7C69D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +58,7 @@
 		4898C7411900343600A7C69D /* MapsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MapsTests-Info.plist"; sourceTree = "<group>"; };
 		4898C7431900343600A7C69D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4898C7451900343600A7C69D /* MapsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapsTests.m; sourceTree = "<group>"; };
+		4898C74F1900344700A7C69D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				488205DF194DCAD9009E97D7 /* iAd.framework in Frameworks */,
+				4898C7501900344700A7C69D /* MapKit.framework in Frameworks */,
 				4898C71D1900343600A7C69D /* CoreGraphics.framework in Frameworks */,
 				4898C71F1900343600A7C69D /* UIKit.framework in Frameworks */,
 				4898C71B1900343600A7C69D /* Foundation.framework in Frameworks */,
@@ -101,6 +109,8 @@
 		4898C7191900343600A7C69D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				488205DE194DCAD9009E97D7 /* iAd.framework */,
+				4898C74F1900344700A7C69D /* MapKit.framework */,
 				4898C71A1900343600A7C69D /* Foundation.framework */,
 				4898C71C1900343600A7C69D /* CoreGraphics.framework */,
 				4898C71E1900343600A7C69D /* UIKit.framework */,
@@ -126,6 +136,7 @@
 		4898C7211900343600A7C69D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				480294D4196CA67B00F8DE33 /* iOS-4-Wallpaper-iPhone-4 copia.png */,
 				4898C7221900343600A7C69D /* Maps-Info.plist */,
 				4898C7231900343600A7C69D /* InfoPlist.strings */,
 				4898C7261900343600A7C69D /* main.m */,
@@ -199,6 +210,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = BRA;
 				TargetAttributes = {
+					4898C7161900343600A7C69D = {
+						DevelopmentTeam = QPM4B4344Q;
+					};
 					4898C7371900343600A7C69D = {
 						TestTargetID = 4898C7161900343600A7C69D;
 					};
@@ -231,6 +245,7 @@
 				4898C7331900343600A7C69D /* Images.xcassets in Resources */,
 				4898C7251900343600A7C69D /* InfoPlist.strings in Resources */,
 				4898C72E1900343600A7C69D /* Main.storyboard in Resources */,
+				480294D5196CA67B00F8DE33 /* iOS-4-Wallpaper-iPhone-4 copia.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +316,73 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		48334A671901B333008F3A58 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Paolo Brugnoli (QPM4B4344Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		48334A681901B333008F3A58 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Maps/Maps-Prefix.pch";
+				INFOPLIST_FILE = "Maps/Maps-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
+		};
+		48334A691901B333008F3A58 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Maps.app/Maps";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Maps/Maps-Prefix.pch";
+				INFOPLIST_FILE = "MapsTests/MapsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Distribution;
+		};
 		4898C7471900343600A7C69D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -317,6 +399,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Adriano Brugnoli (86B7SE62HZ)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -355,6 +438,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Adriano Brugnoli (86B7SE62HZ)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -376,10 +460,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Maps/Maps-Prefix.pch";
 				INFOPLIST_FILE = "Maps/Maps-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -389,10 +476,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Maps/Maps-Prefix.pch";
 				INFOPLIST_FILE = "Maps/Maps-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -445,6 +535,7 @@
 			buildConfigurations = (
 				4898C7471900343600A7C69D /* Debug */,
 				4898C7481900343600A7C69D /* Release */,
+				48334A671901B333008F3A58 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -454,16 +545,20 @@
 			buildConfigurations = (
 				4898C74A1900343600A7C69D /* Debug */,
 				4898C74B1900343600A7C69D /* Release */,
+				48334A681901B333008F3A58 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4898C74C1900343600A7C69D /* Build configuration list for PBXNativeTarget "MapsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4898C74D1900343600A7C69D /* Debug */,
 				4898C74E1900343600A7C69D /* Release */,
+				48334A691901B333008F3A58 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

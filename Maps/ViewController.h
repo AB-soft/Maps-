@@ -7,7 +7,28 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import <iAd/iAd.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController  <MKMapViewDelegate>
+{
+    IBOutlet MKMapView *MapView;
+    
+    IBOutlet UISwitch * SwitchZoom;
+    
+    IBOutlet  UISegmentedControl *TipoMappa;
+    
+}
+
+-(IBAction)Zoom:(id)sender;
+
+-(IBAction)MiaPosizione:(id)sender;
+
+-(IBAction)CambiaTipoMappa:(id)sender;
+
+-(void)Posizione;
+
+
+
 
 @end

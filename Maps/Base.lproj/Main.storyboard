@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
@@ -15,13 +16,98 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="iOS-4-Wallpaper-iPhone-4 copia.png" translatesAutoresizingMaskIntoConstraints="NO" id="68O-O9-xHU">
+                                <rect key="frame" x="0.0" y="491" width="320" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="elK-do-6EO"/>
+                                </constraints>
+                            </imageView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bSa-nQ-8oP">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="493"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6x-5A-b4o">
+                                <rect key="frame" x="262" y="602" width="51" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="51" id="Hye-Wy-yma"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="tintColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="➣"/>
+                                <connections>
+                                    <action selector="MiaPosizione:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3QZ-WU-nAV"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="t18-xQ-2xf">
+                                <rect key="frame" x="0.0" y="540" width="320" height="29"/>
+                                <segments>
+                                    <segment title="Standard"/>
+                                    <segment title="Satellite"/>
+                                    <segment title="Hybrid"/>
+                                </segments>
+                                <color key="tintColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="CambiaTipoMappa:" destination="vXZ-lx-hvc" eventType="valueChanged" id="IhV-45-2mn"/>
+                                </connections>
+                            </segmentedControl>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JI6-kQ-eVd">
+                                <rect key="frame" x="77" y="503" width="51" height="31"/>
+                                <color key="tintColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="Zoom:" destination="vXZ-lx-hvc" eventType="valueChanged" id="35i-ag-fF0"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="zoom" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SrK-nE-sD1">
+                                <rect key="frame" x="20" y="503" width="43" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Localization" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UrA-ER-0hI">
+                                <rect key="frame" x="170" y="605" width="92" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OJD-2N-J5a">
+                                <rect key="frame" x="0.0" y="20" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </adBannerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="t18-xQ-2xf" firstAttribute="top" secondItem="N6x-5A-b4o" secondAttribute="bottom" constant="9" id="1GC-IV-Q4V"/>
+                            <constraint firstItem="N6x-5A-b4o" firstAttribute="top" secondItem="JI6-kQ-eVd" secondAttribute="top" id="2h2-o1-CFY"/>
+                            <constraint firstItem="SrK-nE-sD1" firstAttribute="centerY" secondItem="JI6-kQ-eVd" secondAttribute="centerY" id="7qy-6k-KsD"/>
+                            <constraint firstItem="JI6-kQ-eVd" firstAttribute="leading" secondItem="SrK-nE-sD1" secondAttribute="trailing" constant="14" id="80V-uh-bIA"/>
+                            <constraint firstItem="SrK-nE-sD1" firstAttribute="top" secondItem="bSa-nQ-8oP" secondAttribute="bottom" constant="10" id="JcU-GF-G7W"/>
+                            <constraint firstAttribute="trailing" secondItem="N6x-5A-b4o" secondAttribute="trailing" constant="20" symbolic="YES" id="Qqc-Vz-LMs"/>
+                            <constraint firstItem="68O-O9-xHU" firstAttribute="leading" secondItem="t18-xQ-2xf" secondAttribute="leading" id="VKx-ew-5oL"/>
+                            <constraint firstItem="SrK-nE-sD1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="VyV-FQ-mPm"/>
+                            <constraint firstItem="t18-xQ-2xf" firstAttribute="trailing" secondItem="68O-O9-xHU" secondAttribute="trailing" id="bQF-wz-lLU"/>
+                            <constraint firstItem="t18-xQ-2xf" firstAttribute="top" secondItem="JI6-kQ-eVd" secondAttribute="bottom" constant="6" id="mg7-iH-hkV"/>
+                            <constraint firstItem="JI6-kQ-eVd" firstAttribute="top" secondItem="SrK-nE-sD1" secondAttribute="top" id="sPN-ag-RHw"/>
+                            <constraint firstItem="68O-O9-xHU" firstAttribute="bottom" secondItem="t18-xQ-2xf" secondAttribute="bottom" id="saD-wa-80O"/>
+                            <constraint firstItem="bSa-nQ-8oP" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="uq3-nZ-vSR"/>
+                            <constraint firstAttribute="bottom" secondItem="68O-O9-xHU" secondAttribute="bottom" id="xAG-ED-7Ji"/>
+                            <constraint firstItem="bSa-nQ-8oP" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="yx9-6Q-UNv"/>
+                        </constraints>
                     </view>
+                    <size key="freeformSize" width="320" height="480"/>
+                    <connections>
+                        <outlet property="MapView" destination="bSa-nQ-8oP" id="09p-if-Ref"/>
+                        <outlet property="SwitchZoom" destination="JI6-kQ-eVd" id="6Z5-nI-Ygt"/>
+                        <outlet property="TipoMappa" destination="t18-xQ-2xf" id="MKY-iK-HAk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="129" y="-43"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="iOS-4-Wallpaper-iPhone-4 copia.png" width="320" height="480"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
